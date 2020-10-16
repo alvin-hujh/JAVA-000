@@ -10,6 +10,7 @@ import java.nio.file.Paths;
 public class MyClassLoader extends ClassLoader {
     @Override
     protected Class<?> findClass(String name) {
+        //name 不能包含后缀，不然在解析的时候会报错，这里采用字符串拼接完整路径及后缀
         String myPath = "file:///Users/hujh/develop/Java-Training-Camp/JAVA-000/Week_01/Hello/" + name + ".xlass";
         System.out.println(myPath);
         byte[] cLassBytes = null;

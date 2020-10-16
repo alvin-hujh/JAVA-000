@@ -9,6 +9,7 @@ public class UseMyClassLoader {
             Class<?> aClass = classLoader.findClass("Hello");
             Object instance = aClass.newInstance();
             Method method = aClass.getMethod("hello");
+            //调用 hello 方法
             Object invoke = method.invoke(instance);
         } catch (Exception e) {
             e.printStackTrace();
