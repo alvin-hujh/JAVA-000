@@ -6,10 +6,10 @@
 
 ## Java 多线程
 
-![Alt text](Java多线程.png)
+![avatar](Java多线程.png)
 
 
-## Java 
+## Java 集合
 
-
+![avatar](Java集合.png)
 
