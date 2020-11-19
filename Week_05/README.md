@@ -14,14 +14,17 @@
     
     状态：已完成
     代码地址：com.hujh.camping.week5.homework.myaop,执行 HumanFactory#main
-    问题：希望拦截部分成功了，但是有点不符合期望，为什么代理生成的类不是 Student 类，执行方法的时候 Student 里面的方法没有被执行，日志如下
+    执行日志如下
 ```
 拦截方法成功，name=work
 课前预习
+好好学习
 拦截方法成功，name=work
 课后复习
 未拦截的方法，name = eat
+吃食堂
 未拦截的方法，name = sleep
+睡宿舍
 验证结束
 ```
     

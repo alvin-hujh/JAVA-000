@@ -33,10 +33,10 @@ public class MyAOPHandler implements InvocationHandler {
     private Boolean getFlag(Object obj, Method method) {
         boolean flag = false;
         try {
-            Method m[] = obj.getClass().getDeclaredMethods();
-            for (Method mm : m) {
-                MyAOP myAOP = mm.getAnnotation(MyAOP.class);
-                if (myAOP != null && mm.getName().equalsIgnoreCase(method.getName())) {
+            Method[] declaredMethods = obj.getClass().getDeclaredMethods();
+            for (Method dm : declaredMethods) {
+                MyAOP myAOP = dm.getAnnotation(MyAOP.class);
+                if (myAOP != null && dm.getName().equalsIgnoreCase(method.getName())) {
                     flag = true;
                     break;
                 }

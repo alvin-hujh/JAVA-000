@@ -4,18 +4,18 @@ import com.hujh.camping.week5.homework.myaop.target.MyAOP;
 
 public class Student implements Human {
     @Override
-    public String eat() {
-        return "吃食堂";
+    public void eat() {
+        System.out.println("吃食堂");
     }
 
 
-    public String sleep() {
-        return "睡宿舍";
+    public void sleep() {
+        System.out.println("睡宿舍");
     }
 
     @MyAOP
     @Override
-    public String work() {
-        return "好好学习";
+    public void work() {
+        System.out.println("好好学习");
     }
 }
