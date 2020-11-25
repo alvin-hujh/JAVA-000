@@ -32,7 +32,7 @@
 
     状态：已完成
     
-    代码地址：com.hujh.camping.week5.homework.myaop
+    代码地址：com.hujh.camping.week5.homework.bean
     
     想到 3 种方式：1.使用 @Component 或者它派生的注解；2.Java 代码中显示注入@Bean；3.xml 文件中配置<bean>
     
